@@ -1,5 +1,9 @@
 import React from "react"
 import "./homepage.css"
+import JobRatings from './JobRatings.png';
+import JobVacancies from './JobVacancies.png';
+import JobVacanciesBar from './JobVacanciesBar.png';
+import Experience from './Experience.png';
 
 
 const Homepage = ({setLoginUser}) => {
@@ -14,7 +18,6 @@ const Homepage = ({setLoginUser}) => {
     return (
         <div className="homepage">
             <h1  class="order-header">All-at-One Job Portal</h1>
-            <br></br>
             <h2  class="order-header">Job openings</h2>
             <table>
 
@@ -33,6 +36,13 @@ const Homepage = ({setLoginUser}) => {
                 )
                 })}
             </table>
+            <div className="visual">
+                <img src={JobRatings} />
+                
+                <img src={Experience} />
+                <img src={JobVacanciesBar} />
+                <img src={JobVacancies} />
+            </div>
             <div className="button" onClick={() => setLoginUser({})} >Logout</div>
         </div>
     )
