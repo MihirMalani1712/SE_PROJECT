@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import "./login.css"
 import axios from "axios"
 import { useHistory } from "react-router-dom"
+import Job from './job.jpg';
 
 const Login = ({ setLoginUser}) => {
 
@@ -37,6 +38,8 @@ const Login = ({ setLoginUser}) => {
             <div className="button" onClick={login}>Login</div>
             <div>or</div>
             <div className="button" onClick={() => history.push("/register")}>Register</div>
+            <br></br>
+            <img src={Job} />
         </div>
     )
 }
